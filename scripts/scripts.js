@@ -204,10 +204,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===== COUNTDOWN TIMER FUNCTIONALITY =====
-    // Set the target date: 32 days 2025
-    const startDate = new Date(2026, 3, 01); // April 1, 2025 (Month is 0-indexed)
+    // Set the target date: 37 days from February 23, 2026
+    const startDate = new Date(2026, 1, 23); // February 23, 2026 (Month is 0-indexed, so 1 = February)
     const targetDate = new Date(startDate);
-    targetDate.setDate(startDate.getDate() + 32);
+    targetDate.setDate(startDate.getDate() + 37); // April 1, 2026
+
     // Elements
     const daysElement = document.getElementById('countdown-days');
     const hoursElement = document.getElementById('countdown-hours');
